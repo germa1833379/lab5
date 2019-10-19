@@ -111,10 +111,14 @@ public class main extends Application {
         return rep;
     }
     public static Group connectedScene(Stage st){
-        ProgressBar bar = new ProgressBar();
-        bar.setTranslateX(340);
-        bar.setTranslateY(280);
-        Group rep = new Group(bar);
+        ProgressIndicator bar = new ProgressIndicator();
+        bar.setTranslateX(360);
+        bar.setTranslateY(260);
+        Label lb = new Label();
+        lb.setText("Chargement en cours.");
+        lb.setTranslateX(330);
+        lb.setTranslateY(320);
+        Group rep = new Group(bar,lb);
         return rep;
     }
     public static Group signUpScreen(Stage st){
